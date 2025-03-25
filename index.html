@@ -5,36 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
+    <style>
+        /* Basic styling for improved presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: lightblue;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <!--
     Objective:
-    The goal of this project is to create a personal profile webpage using only HTML.This HTML webpage is structured using semantic HTML elements.
+    The goal of this project is to create a personal profile webpage using only HTML and basic CSS.
     
     Use Case:
-    This HTML webpage can be used as an online portfolio and can also serve as a personal website to show information about me, my hobbies, my contact means, etc.
+    This webpage can serve as an online portfolio showcasing personal details, hobbies, and contact information.
     -->
-     <!-- Header Section: Contains the navigation menu -->
+
+    <!-- Header Section: Contains the navigation menu -->
     <header>
         <nav>
             <ul>
-                <!-- Navigation links to different sections of the page -->
-                <li>About Me</li>
-                <li>Hobbies</li>
-                <li>Contact</li>
+                <!-- Functional navigation links -->
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Bio Section: Contains personal information and image -->
-     <section>
-            <h1>My Bio</h1>
-             <!-- Profile Image -->
-            <img src="Shammah.jpg" alt="My Image">
-            <p>Hello... I am Shammah Shemang Ayuba a student member of the Nigerian Computer Society (NCS), an enthusiastic and results-driven computer scientist, educationist, and entrepreneur passionate about leveraging technology and innovation to drive impactful solutions in education, technology, and service delivery. Dedicated to continuous learning, resilience under pressure, and fostering organizational excellence.</p>
-     </section>
+    <section id="about">
+        <h1>My Bio</h1>
+        <!-- Profile Image -->
+        <img src="Shammah.jpg" alt="My Image">
+        <p>Hello... I am Shammah Shemang Ayuba, a student member of the Nigerian Computer Society (NCS), an enthusiastic and results-driven computer scientist, educationist, and entrepreneur passionate about leveraging technology and innovation to drive impactful solutions in education, technology, and service delivery. Dedicated to continuous learning, resilience under pressure, and fostering organizational excellence.</p>
+    </section>
 
-      <!-- Hobbies Section -->
+    <!-- Hobbies Section -->
     <section id="hobbies">
         <h2>My Hobbies:</h2>
         <ul>
@@ -44,12 +96,13 @@
         </ul>
     </section>
 
-      <!-- Footer Section: Contains contact details -->
-      <footer>
+    <!-- Footer Section: Contains contact details -->
+    <footer id="contact">
         <h2>My Contact:</h2>
-        <!-- Contact Information -->
-        <p>Email: example@email.com</p>
-        <p>Facebook: @examplehandle</p>
-      </footer>
+        <address>
+            Email: <a href="mailto:example@email.com">example@email.com</a><br>
+            Facebook: <a href="https://facebook.com/examplehandle" target="_blank">@examplehandle</a>
+        </address>
+    </footer>
 </body>
 </html>
