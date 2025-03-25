@@ -1,80 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Page metadata for character encoding and responsiveness -->
+    <!-- Meta information about the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shammah's Profile</title>
-    <style>
-        /* General page styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-
-        /* Styling for header and navigation */
-        header {
-            background: #333;
-            color: white;
-            padding: 15px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Section styling */
-        section {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Profile image styling */
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* Footer styling */
-        footer {
-            background: #333;
-            color: white;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        footer a {
-            color: lightblue;
-            text-decoration: none;
-        }
-    </style>
+    <title>My Profile</title>
 </head>
 <body>
-    <!-- Header with title and navigation menu -->
+    <!-- 
+    Objective:
+    This project is aimed at creating a personal profile webpage using only HTML.
+    It is structured using semantic HTML elements for better organization and readability.
+
+    Use Case:
+    This webpage can serve as an online portfolio or a personal website 
+    to showcase my bio, hobbies, and contact details.
+    -->
+
+    <!-- Header Section: Contains the navigation menu -->
     <header>
-        <h1>Shammah Shemang Ayuba</h1>  
         <nav>
             <ul>
+                <!-- Navigation links to different sections of the page -->
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -82,22 +29,25 @@
         </nav>
     </header>
 
-    <!-- Bio Section: Contains personal details and an image -->
+    <!-- Bio Section: Contains personal information and image -->
     <section id="about">
-        <h2>About Me</h2>
-        <img src="Shammah.jpg" alt="Shammah Shemang Ayuba">
-        <p>
-            Hello... I am Shammah Shemang Ayuba, a student member of the Nigerian Computer Society (NCS), 
-            an enthusiastic and results-driven computer scientist, educationist, and entrepreneur passionate 
-            about leveraging technology and innovation to drive impactful solutions in education, technology, 
-            and service delivery. Dedicated to continuous learning, resilience under pressure, and fostering 
-            organizational excellence.
-        </p>
+        <div>
+            <h1>My Bio</h1>
+            <!-- Profile Image -->
+            <img src="Shammah.jpg" alt="My Image" width="150rem" height="150rem">
+            <p>
+                Hello... I am Shammah Shemang Ayuba, a student member of the Nigerian Computer Society (NCS), 
+                an enthusiastic and results-driven computer scientist, educationist, and entrepreneur. 
+                I am passionate about leveraging technology and innovation to drive impactful solutions in education, 
+                technology, and service delivery. Dedicated to continuous learning, resilience under pressure, 
+                and fostering organizational excellence.
+            </p>
+        </div>
     </section>
 
     <!-- Hobbies Section -->
     <section id="hobbies">
-        <h2>My Hobbies</h2>
+        <h2>My Hobbies:</h2>
         <ul>
             <li>Solving Problems</li>
             <li>Singing</li>
@@ -105,11 +55,14 @@
         </ul>
     </section>
 
-    <!-- Contact Section: Email and social media links -->
+    <!-- Footer Section: Contains contact details -->
     <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:shammah@example.com">shammah@example.com</a></p>
-        <p>Facebook: <a href="https://facebook.com/shammah.shemang" target="_blank">@Shammah.Shemang</a></p>
+        <h2>My Contact:</h2>
+        <!-- Contact Information -->
+        <address>
+            Email: <a href="mailto:example@email.com">example@email.com</a><br>
+            Facebook: <a href="https://facebook.com/examplehandle" target="_blank">@examplehandle</a>
+        </address>
     </footer>
 </body>
 </html>
